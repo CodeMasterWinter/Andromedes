@@ -1,0 +1,8 @@
+.idea/
+andromedesweb/__pycache__/
+virtual/
+venv/
+db.sqlite3
+andromedesweb/migrations/__pycache__/
+andromedesweb/migrations
+projectandromedes/__pycache__/

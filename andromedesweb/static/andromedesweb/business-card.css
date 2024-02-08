@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --mtk-light-blue: #2AADED;
+    --mtk-dark-blue: #2F458E;
+    --header-height: 35dvh
+}
+
+body {
+    height: 100dvh;
+    background: linear-gradient(to top, var(--mtk-light-blue), transparent 20%);
+}
+
+header {
+    height: var(--header-height);
+}
+
+.header-container {
+    height: 100%;
+    position: relative;
+    background-color: var(--mtk-dark-blue);
+}
+
+.card-logo {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--mtk-light-blue);
+    mask: linear-gradient(#2AADED 80%, transparent);
+}
+
+.card-logo-img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-avatar {
+    left: 50%;
+    height: 80%;
+    padding: 4px;
+    position: absolute;
+    border-radius: 50%;
+    top: var(--header-height);
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+}
+
+.card-avatar-img {
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.card-title {
+    margin: auto;
+    font-weight: 600;
+    width: max-content;
+    color: var(--mtk-dark-blue);
+    font-family: 'Protest Strike', 'Ubuntu';
+}
+
+#card-details {
+    margin-top: 15dvh;
+}
+
+.card-greeting {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Ubuntu';
+    color: var(--mtk-light-blue);
+}
+
+.developer-link {
+    bottom: 0;
+    font-weight: '600';
+    position: absolute;
+    font-family: 'Urbanist';
+}
+
+.interactions-container {
+    border: 2px solid #2AADED;
+}
+
+.interactions-row {
+    gap: 1rem;
+}
+
+.card-button {
+    display: flex;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 0.3rem;
+    align-items: center;
+    font-family: 'Ubuntu';
+    text-decoration: none;
+    justify-content: center;
+    background-color: var(--mtk-dark-blue);
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+}
