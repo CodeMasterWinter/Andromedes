@@ -15,35 +15,39 @@ body {
 
 header {
     height: var(--header-height);
+    background: url(images/card-header-bg.jpg) top no-repeat;
+    background-size: cover;
 }
 
-.header-container {
-    height: 100%;
-    position: relative;
-    background-color: var(--mtk-dark-blue);
-}
-
-.card-logo {
-    height: 50%;
+nav {
+    height: 12dvh;
     display: flex;
+    align-items: center;
     justify-content: center;
     background-color: var(--mtk-light-blue);
-    mask: linear-gradient(#2AADED 80%, transparent);
 }
 
-.card-logo-img {
+.nav-logo {
     height: 100%;
     object-fit: contain;
 }
 
+.header-content {
+    height: 23dvh;
+    background-color: #00000073;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .card-avatar {
-    left: 50%;
-    height: 80%;
+    width: 20dvh;
     padding: 4px;
-    position: absolute;
+    height: 20dvh;
     border-radius: 50%;
-    top: var(--header-height);
-    transform: translate(-50%, -50%);
     background-color: #ffffff;
 }
 
@@ -53,38 +57,34 @@ header {
     object-fit: contain;
 }
 
-.card-title {
-    margin: auto;
-    font-weight: 600;
-    width: max-content;
-    color: var(--mtk-dark-blue);
-    font-family: 'Protest Strike', 'Ubuntu';
+.card-details {
+    width: 100%;
+    font-family: 'Montserrat', 'Urbanist';
 }
 
-#card-details {
-    margin-top: 15dvh;
-}
-
-.card-greeting {
-    text-align: center;
+.card-name {
+    color: #ffffff;
     font-weight: 700;
-    font-family: 'Ubuntu';
-    color: var(--mtk-light-blue);
+    width: max-content;
 }
 
-.developer-link {
-    bottom: 0;
-    font-weight: '600';
-    position: absolute;
+.card-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--mtk-light-blue)
+}
+
+#card-greeting {
+    margin-top: 5dvh;
+    text-align: center;    
+}
+
+.greeting-text {
+    font-weight: 600;
     font-family: 'Urbanist';
 }
 
 .interactions-container {
-    border: 2px solid #2AADED;
-}
-
-.interactions-row {
-    gap: 1rem;
 }
 
 .card-button {
@@ -93,7 +93,7 @@ header {
     color: #ffffff;
     border-radius: 0.3rem;
     align-items: center;
-    font-family: 'Ubuntu';
+    font-family: 'Montserrat';
     text-decoration: none;
     justify-content: center;
     background-color: var(--mtk-dark-blue);
