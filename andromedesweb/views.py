@@ -9,6 +9,7 @@ def index(request):
 
     return render(request, "andromedesweb/index.html", context)
 
+
 def business_card(request):
 
     context = {
@@ -16,3 +17,12 @@ def business_card(request):
     }
 
     return render(request, 'andromedesweb/business-card.html', context)
+
+
+def business_cards(request):
+
+    context = {
+
+    }
+
+    return render(request, 'andromedesweb/business-cards.html', context)

@@ -3,53 +3,117 @@
     padding: 0;
     box-sizing: border-box;
     --nav-width: 80dvw;
+    font-family: 'Montserrat';
 }
 
 header {
     height: 100dvh;
     position: relative;
-    background-color: #030729;
+}
+
+.header-background {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#header-background {
+    width: 100%;
+}
+
+.header-bg-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000054;
 }
 
 nav {
-    top: 5dvh;
-    left: 50%;
-    width: 80dvw;
-    height: 10dvh;
-    max-width: 80dvw;
-    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20dvh;
+    display: flex;
     position: absolute;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    height: 10dvh;
+    max-width: 75%;
+    overflow: hidden;
+    list-style: none;
     border-radius: 8dvh;
-    transform: translateX(-50%);
     backdrop-filter: blur(5px);
     border: 1px solid #ffffff26;
     background-color: #ffffff2f;
 }
 
-.nav-list {
-    height: 100%;
-    display: flex;
-    list-style: none;
-    border-radius: 8dvh;
-}
-
 .nav-item {
+    width: 100%;
     height: 100%;
     display: flex;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-link {
-    width: 100%;
-    height: 100%;
-    display: flex;
+    font-weight: 600;
     color: #ffffff;
-    align-items: center;
     text-decoration: none;
-    justify-content: center;
     transition: 0.3s ease;
+    position: relative;
+    padding: 5px;
 }
 
-.nav-link:hover {
-    background-color: #ffffff10;
+.nav-link::after {
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    content: '';
+    height: 4px;
+    border-radius: 5px;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: #b903d1;
+    transition: 0.3s all;
+}
+
+.nav-link:hover::after{
+    width: 70%
+}
+
+.header-text {
+    top: 50%;
+    font-weight: 700;
+    position: absolute;
+    margin-inline-start: 4rem;
+    transform: translateY(-50%);
+}
+
+.header-title {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.header-tagline {
+    font-size: 4rem;
+    color: #9205a5;
+    font-weight: 900; 
+}
+
+.nav-brand-text {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.nav-brand-text span{
+    color: #b903d1;
 }

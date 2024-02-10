@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'andromedesweb/business-cards.css' %}">
+
+    <title>Business Cards - AnromedesWeb</title>
+</head>
+<body>
+    <header>   
+        <nav>
+            <div class="nav-brand">
+                <h5 class="nav-brand-text">
+                    Andromedes<span>Web</span>
+                </h5>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="{% url 'home' %}" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Web Design</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'business-cards' %}" class="nav-link">Business Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Meet The Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
