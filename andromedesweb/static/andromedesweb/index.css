@@ -63,12 +63,19 @@ nav {
 }
 
 .nav-link {
+    text-align: center;
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
     transition: 0.3s ease;
     position: relative;
     padding: 5px;
+}
+
+
+.nav-link span {
+    color: #b903d1;
+    font-style: italic;
 }
 
 .nav-link::after {

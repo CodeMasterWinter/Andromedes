@@ -8,6 +8,7 @@
 
 header {
     height: 100dvh;
+    overflow: hidden;
     position: relative;
 }
 
@@ -45,12 +46,18 @@ nav {
 }
 
 .nav-link {
+    text-align: center;
     font-weight: 600;
     color: #000000;
     text-decoration: none;
     transition: 0.3s ease;
     position: relative;
     padding: 5px;
+}
+
+.nav-link span {
+    color: #b903d1;
+    font-style: italic;
 }
 
 .nav-link::after {
@@ -79,4 +86,18 @@ nav {
 
 .nav-brand-text span{
     color: #b903d1;
+}
+
+.header-content {
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+
+.virtual-phone-img {
+    height: 80%;
+    object-fit: contain;
 }
