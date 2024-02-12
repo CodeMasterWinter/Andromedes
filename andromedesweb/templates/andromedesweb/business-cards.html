@@ -3,6 +3,13 @@
 
 {% block styles %}<link rel="stylesheet" href="{% static 'andromedesweb/business-cards.css' %}">{% endblock styles%}
 
+{% block accounts %}
+<div id="accounts" class="col-2">
+    <a href="#" class="account-button mx-2 px-3" id="login">Login</a>
+    <a href="#" class="account-button mx-2 px-3" id="signup">Sign Up</a>
+</div>
+{% endblock %}
+
 {% block header %} 
     <div class="bg-color-block"></div>
     <div class="container-xxl header-container">
@@ -14,7 +21,7 @@
                     <h1 class="header-title second"><span>RE</span>-Introduce Yourself</h1>
                     <h1 class="header-title third">RE-INVENT YOURSELF</h1>
                 </div>
-                <div class="virtual-phone col-4">
+                <div class="virtual-phone d-none d-lg-flex col-4">
                     <img src="{% static 'andromedesweb/images/virtual-business-phone.png' %}" class="img-fluid virtual-phone-img">
                 </div>
             </div>
@@ -22,4 +29,27 @@
     </div>
 {% endblock header %}
 {% block content %}
+    <section id="what">
+        <div class="container-xxl what-container p-5">
+            <div class="display-5 what-heading ps-4">
+                What is a virtual business card?
+            </div>
+            <div class="row what-row align-items-center">
+                <p class="what-text col-5 my-5">
+                    Nowadays, All the information we share about ourselves 
+                    and our business is contained <span class="what-span">online.</span>
+                    Whether it be your Social Media accounts, your digital portfolio or 
+                    your ACTUAL BUSINESS! And more importantly, when people want to find you, 
+                    their first instinct is to find you ONLINE, which is where we come in.<br><br>
+
+                    A <span class="what-span"><i>virtual</i> </span> business card grants people access to all the information you want to 
+                    share ALL IN ONE PLACE. You can share as much information as needed, unlike a 
+                    physical business card, which is traditionally limited to just your Name, 
+                    Job, Phone Number and E-mail Address. <br><br>
+
+                    <span class="white-span">But you're not that boring... <span class="what-span"><i>right?</i></span></span>
+                </p>
+            </div>
+        </div>
+    </section>
 {% endblock content %}
