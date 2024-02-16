@@ -5,20 +5,15 @@
 
 {% block header %}
     <div class="container-fluid background-container p-0 m-0">
-        <div class="header-background">
             <video id="header-background" autoplay muted loop loading="lazy">
                 <source src="{% static 'andromedesweb/videos/Andromedes Header.mp4' %}" type="video/mp4">
+                <source src="{% static 'andromedesweb/videos/Andromedes Header.webm' %}" type="video/webm">
                 Your browser does not support the video tag.
-            </video>
-            <div class="header-bg-overlay"></div>
-        </div>         
+            </video>     
         <div class="header-text">
             <div class="container-xxl header-container">
                 <h1 class="header-title">
-                    We don't just<br>build websites,
-                </h1>
-                <h1 class="header-tagline">
-                    We build DREAMS...
+                    Make the<br>most out of your<br>business <span class="header-tagline">online</span>
                 </h1>
             </div>
         </div>

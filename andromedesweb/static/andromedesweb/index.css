@@ -2,13 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --nav-width: 80dvw;
-    font-family: 'Montserrat';
+    font-family: 'Figtree';
 }
 
 header {
     height: 100dvh;
     position: relative;
+}
+
+header::before {
+    inset: 0;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    background-color: #00000038;
 }
 
 .background-container {
@@ -18,16 +25,13 @@ header {
 }
 
 #header-background {
-    width: 100%;
-}
-
-.header-bg-overlay {
     top: 0;
     left: 0;
+    z-index: -2;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     position: absolute;
-    background-color: #00000054;
 }
 
 .header-text {

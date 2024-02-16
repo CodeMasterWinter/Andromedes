@@ -35,19 +35,17 @@ html {
 }
 
 nav {
-    top: 0;
-    left: 0;
+    padding-inline: 4rem;
     width: 100%;
-    z-index: 9999;
-    height: 20dvh;
+    height: 15dvh;
     display: flex;
     position: absolute;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .nav-brand-text {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #ffffff;
     font-weight: 700;
     font-style: italic;
@@ -60,16 +58,11 @@ nav {
 
 .nav-list {
     display: flex;
-    height: 10dvh;
-    overflow: hidden;
     list-style: none;
     border-radius: 8dvh;
     animation: fadeIn 2s;
     align-items: center;
-    justify-content: space-evenly;
-    backdrop-filter: blur(5px);
-    border: 1px solid #ffffff26;
-    background-color: #ffffff2f;
+    justify-content: space-between;
 }
 
 .nav-link {

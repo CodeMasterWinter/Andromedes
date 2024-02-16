@@ -18,28 +18,23 @@
     }
 }
 
-.bg-color-block {
-    top: 0;
-    right: -60dvw;
-    width: 100dvw;
-    height: 100dvh;
-    z-index: -1;
-    position: absolute;
-    transform: skew(45deg);
-    background-color: #b903d1;
-    box-shadow: rgba(185, 3, 209, 0.4) -5px 5px, rgba(185, 3, 209, 0.3) -10px 10px, rgba(185, 3, 209, 0.2) -15px 15px, rgba(185, 3, 209, 0.1) -20px 20px, rgba(185, 3, 209, 0.05) -25px 25px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    --nav-width: 80dvw;
-    font-family: 'Montserrat';
+.nav-list {
+    display: flex;
+    height: 10dvh;
+    overflow: hidden;
+    list-style: none;
+    border-radius: 8dvh;
+    animation: fadeIn 2s;
+    align-items: center;
+    justify-content: space-evenly;
+    backdrop-filter: blur(5px);
+    border: 1px solid #ffffff26;
+    background-color: #ffffff2f;
 }
 
 .nav-brand-text {
     color: #101010;
+    font-family: "Figtree";
 }
 
 .nav-list {
@@ -116,7 +111,7 @@ header {
 
 .header-title.second {
     color: #101010;
-    animation: slideIn 0.7s linear;
+    animation: slideIn 0.7s ease-in-out;
     animation-delay: 1s;
     animation-fill-mode: backwards;
     text-transform: uppercase;
@@ -129,7 +124,7 @@ header {
 
 .header-title.third {
     color: #b903d1;
-    animation: slideIn 0.7s linear;
+    animation: slideIn 0.7s ease-in-out;
     animation-delay: 2s;
     animation-fill-mode: backwards;
     font-style: italic;
