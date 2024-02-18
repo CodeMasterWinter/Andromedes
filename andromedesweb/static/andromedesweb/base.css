@@ -63,7 +63,7 @@ nav {
 }
 
 .nav-brand-text span{
-    color: #b903d1;
+    color: #9205a5;
 }
 
 .nav-list {
@@ -96,7 +96,7 @@ nav {
 }
 
 .nav-link span {
-    color: #b903d1;
+    color: #9205a5;
     font-style: italic;
 }
 
@@ -109,7 +109,7 @@ nav {
     border-radius: 5px;
     position: absolute;
     transform: translateX(-50%);
-    background-color: #b903d1;
+    background-color: #9205a5;
     transition: 0.3s all;
 }
 
@@ -152,9 +152,9 @@ nav {
 }
 
 .sub-nav-link:hover {
-    color: #b903d1;
+    color: #9205a5;
     padding-left: 1rem;
-    background-color: #b903d125;
+    background-color: #9205a525;
 }
 
 .nav-item:hover .sub-nav,
