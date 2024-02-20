@@ -40,6 +40,35 @@
     }
 }
 
+@keyframes splash {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+#splash-brand-text {
+    font-size: 2rem;
+    color: #000000;
+    font-weight: 700;
+    font-style: italic;
+    animation: 2s ease infinite alternate splash, 2s ease fadeIn;
+}
+
+#splash-brand-text span{
+    color: #9205a5;
+}
+
+#splash-screen {
+    display: grid;
+    height: 100dvh;
+    place-content: center;
+    background-color: #ffffff;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -59,7 +88,7 @@ nav {
     color: #ffffff;
     font-weight: 700;
     font-style: italic;
-    animation: riseIn 2s;
+    animation: riseIn 2s 5s;
 }
 
 .nav-brand-text span{
@@ -70,7 +99,7 @@ nav {
     display: flex;
     list-style: none;
     border-radius: 8dvh;
-    animation: fadeIn 2s;
+    animation: fadeIn 2s 5s;
     align-items: center;
     justify-content: space-between;
 }
@@ -84,7 +113,7 @@ nav {
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: transform 0.2s ease;
     position: relative;
     padding: 5px;
     white-space: nowrap;
@@ -110,7 +139,11 @@ nav {
     position: absolute;
     transform: translateX(-50%);
     background-color: #9205a5;
-    transition: 0.3s all;
+    transition: 0.3s width;
+}
+
+.nav-link:hover {
+    transform: translateY(-0.2rem);
 }
 
 .nav-link:hover::after{

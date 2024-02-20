@@ -72,6 +72,7 @@ header::before {
     font-size: 3rem;
     color: #000000;
     font-weight: 700;
+    border-left: 1rem solid #9205a5;
 }
 
 .services-tagline {
@@ -168,4 +169,134 @@ header::before {
 .box-description {
     font-weight: 700;
     font-size: 1.2rem;
+}
+
+#contact {
+    height: 100dvh;
+}
+
+.contact-container {
+    gap: 1rem;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.contact-details {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.contact-details::before {
+    inset: 0;
+    width: 100%;
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(to top, transparent, #00000060)
+}
+
+.contact-img {
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+    position: absolute;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.contact-details:hover .contact-img{
+    transform: scale(1);
+}
+
+.contact-form {
+    height: 100%;
+}
+
+.contact-header {
+    color: #ffffff;
+    border-left: 1rem solid #9205a5;
+}
+
+.contact-letter {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+form {
+    height: 100%;
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+}
+
+.form-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row:not(:nth-last-child(1)) {
+    height: 25%;
+}
+
+.form-row:nth-last-child(1) {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+input, textarea{
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    caret-color: #9205a5;
+    margin-inline-end: 1rem;
+    padding-inline-start: 1rem;
+    border-bottom: 2px dotted #9205a5;
+}
+
+input {
+    height: 3rem;
+}
+
+.message-block{
+    width: 100%;
+}
+
+.message-row{
+    width: 100%;
+    position: relative;
+}
+
+textarea {
+    width: 90%;
+    height: 100%;
+}
+
+#contact-submit {
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    grid-column: 2;
+    color: #ffffff;
+    position: absolute;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+    background-color: #9205a5;
+}
+
+#contact-submit:hover {
+    background-color: #6e007c;
 }
