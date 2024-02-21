@@ -46,12 +46,14 @@ header::before {
 .header-title {
     font-size: 4rem;
     color: #ffffff;
+    font-family: 'Unbounded';
 }
 
 .header-tagline {
     font-size: 4rem;
     color: #9205a5;
     font-weight: 900; 
+    font-family: 'Unbounded';
 }
 
 #services {
@@ -72,6 +74,7 @@ header::before {
     font-size: 3rem;
     color: #000000;
     font-weight: 700;
+    font-family: 'Unbounded';
     border-left: 1rem solid #9205a5;
 }
 
@@ -293,10 +296,11 @@ textarea {
     color: #ffffff;
     position: absolute;
     border-radius: 0.5rem;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
     background-color: #9205a5;
 }
 
 #contact-submit:hover {
+    transform: translate3d(0, -1rem, 0);
     background-color: #6e007c;
 }
